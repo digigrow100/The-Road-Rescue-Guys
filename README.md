@@ -9,6 +9,8 @@ Website built with [Astro](https://astro.build).
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │   └── images/       # optimized content images (webp preferred)
 │   ├── components/
 │   ├── layouts/
 │   │   └── Layout.astro
@@ -18,6 +20,8 @@ Website built with [Astro](https://astro.build).
 │       └── global.css
 └── package.json
 ```
+
+See `CLAUDE.md` for the full repo map and image-optimization rules.
 
 ## Commands
 

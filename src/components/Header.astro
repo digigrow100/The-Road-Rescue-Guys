@@ -1,0 +1,12 @@
+---
+interface Props {
+  siteName?: string;
+}
+
+const { siteName = 'The Road Rescue Guys' } = Astro.props;
+---
+<header>
+  <nav>
+    <a href="/">{siteName}</a>
+  </nav>
+</header>

@@ -6,19 +6,41 @@ below to jump straight to the right file.
 
 ## Repo map (where things live)
 
-| What you want to change              | Go here                                  |
-| ------------------------------------- | ----------------------------------------- |
-| Home page content                     | `src/pages/index.astro`                   |
-| Any other page (e.g. `/about`)        | `src/pages/about.astro` (file name = URL) |
-| Header / nav                          | `src/components/Header.astro`             |
-| Footer                                | `src/components/Footer.astro`             |
-| Shared page wrapper (`<head>`, etc.)  | `src/layouts/Layout.astro`                |
-| Global CSS                            | `src/styles/global.css`                   |
-| Site config (site URL, integrations)  | `astro.config.mjs`                        |
-| Optimized images (photos, graphics)   | `src/assets/images/`                      |
+| What you want to change                        | Go here                              |
+| ----------------------------------------------- | ------------------------------------- |
+| Home page content                               | `src/pages/index.astro`               |
+| About Us page content                           | `src/pages/about-us.astro`            |
+| Services page content                           | `src/pages/services.astro`            |
+| Contact page content (incl. the contact form)   | `src/pages/contact.astro`             |
+| Any new page (e.g. `/pricing`)                  | `src/pages/pricing.astro` (file name = URL) |
+| Header / nav (shown on every page)              | `src/components/Header.astro`         |
+| Footer (shown on every page)                    | `src/components/Footer.astro`         |
+| Sticky mobile call/WhatsApp bar                 | `src/components/MobileCallBar.astro`  |
+| Reusable FAQ accordion (used on Home/Services/Contact) | `src/components/FaqAccordion.astro` |
+| Shared page wrapper (`<head>`, fonts, wraps Header/Footer/MobileCallBar) | `src/layouts/Layout.astro` |
+| Global CSS / base resets                        | `src/styles/global.css`               |
+| Tailwind design tokens (colors, spacing, fonts) | `tailwind.config.mjs`                 |
+| Site config (site URL, integrations)            | `astro.config.mjs`                    |
+| Optimized images (photos, graphics)             | `src/assets/images/`                  |
 | Static files served as-is (favicon, robots.txt, files that must keep a fixed URL) | `public/` |
 
 New pages go in `src/pages/`. New reusable UI pieces go in `src/components/`.
+Header, Footer, and MobileCallBar are wired into `Layout.astro` — every page
+gets them automatically by wrapping content in `<Layout>...</Layout>`; do not
+re-import or duplicate them inside individual pages.
+
+Note: the phone number (07700 900123), WhatsApp link (wa.me/447700900123),
+email, and depot address (25 Kingsway, Birmingham, B4 7SL) are repeated
+across Header, Footer, MobileCallBar, and every page's CTAs. If the user
+asks to change contact details, update all occurrences — grep for the old
+value across `src/` to find every instance.
+
+The photos across all four pages are currently hotlinked `https://lh3.googleusercontent.com/...`
+placeholder URLs carried over from the original design mockups, not local
+files. When the user supplies real photos, save them into `src/assets/images/`
+per the image rule below and swap the matching `<img src="...">` for an
+Astro `<Image />` import — do this one image at a time as real assets arrive,
+don't block on having all of them.
 
 ## Image rule — always optimized
 

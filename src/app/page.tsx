@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FaqAccordion from '../components/FaqAccordion';
 import WhatsAppIcon from '../components/WhatsAppIcon';
+import GoogleIcon from '../components/GoogleIcon';
 import heroImage from '../assets/images/a_realistic_urban_street_scene_in_daylight_wide_a.webp';
 import vehicleRecoveryCardImage from '../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
 import roadsideAssistanceCardImage from '../assets/images/roadside_battery_assistance_in_a_suburban_street.webp';
@@ -481,47 +482,58 @@ export default function HomePage() {
 
       {/* SECTION 8: AREAS WE COVER */}
       <section id="areas-we-cover" className="w-full bg-surface py-space-xl lg:py-24">
-        <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
-          <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-xs">
-            <span className="font-label-tech text-label-tech text-primary uppercase tracking-widest font-bold">
-              Coverage Network
-            </span>
-            <h2 className="font-headline-lg text-headline-lg text-on-surface">Vehicle Recovery Across the UK</h2>
-            <p className="font-body-md text-body-md text-on-surface-variant">
-              Our mobile flatbeds patrol prime transport corridors and metropolitan centres every hour of the day.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-space-md">
-            {[
-              { name: 'Greater Manchester', tag: 'HQ Hub', tagStyle: 'primary', detail: 'M60 Ring • 15-20 min ETA' },
-              { name: 'Yorkshire', tag: 'Active', tagStyle: 'default', detail: 'West & South Yorkshire • M1 / M621' },
-              { name: 'Motorways', tag: '24/7 Patrol', tagStyle: 'primary', detail: 'M60, M62, M1, A1(M)' },
-            ].map((area) => (
-              <div key={area.name} className="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
-                <div className="flex items-center justify-between">
-                  <span className="font-headline-sm text-headline-sm text-on-surface">{area.name}</span>
-                  <span
-                    className={`px-2 py-0.5 rounded font-label-tech text-[10px] uppercase ${
-                      area.tagStyle === 'primary'
-                        ? 'bg-primary-fixed text-primary font-bold'
-                        : 'bg-surface-container text-on-surface'
-                    }`}
-                  >
-                    {area.tag}
-                  </span>
-                </div>
-                <span className="font-body-sm text-[13px] text-on-surface-variant">{area.detail}</span>
+        <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+            <div className="flex flex-col gap-space-md">
+              <div className="flex flex-col gap-space-xs">
+                <span className="font-label-tech text-label-tech text-primary uppercase tracking-widest font-bold">
+                  Coverage Network
+                </span>
+                <h2 className="font-headline-lg text-headline-lg text-on-surface">
+                  Vehicle Recovery Across Greater Manchester &amp; Yorkshire
+                </h2>
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  Our mobile flatbeds patrol prime transport corridors and metropolitan centres every hour of the
+                  day, so help is always close by wherever you break down.
+                </p>
               </div>
-            ))}
-          </div>
-          <div className="flex justify-center pt-space-xs">
-            <a
-              className="px-8 py-3.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm flex items-center gap-space-xs transition-colors"
-              href="tel:07881241835"
-            >
-              <span className="material-symbols-outlined text-[20px]">map</span>
-              <span>View All Areas We Cover</span>
-            </a>
+              <ul className="flex flex-col gap-space-sm">
+                {[
+                  { name: 'Greater Manchester', detail: 'M60 Ring • 15-20 min ETA' },
+                  { name: 'Yorkshire', detail: 'West & South Yorkshire • M1 / M621' },
+                  { name: 'Motorway Network', detail: 'M60, M62, M1, A1(M) patrolled 24/7' },
+                ].map((area) => (
+                  <li
+                    key={area.name}
+                    className="flex items-start gap-3 p-space-sm bg-surface-container-lowest rounded-lg shadow-sm"
+                  >
+                    <span className="material-symbols-outlined text-primary text-[22px] mt-0.5">check_circle</span>
+                    <div>
+                      <p className="font-label-lg text-label-lg text-on-surface">{area.name}</p>
+                      <p className="font-body-sm text-[13px] text-on-surface-variant">{area.detail}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <div className="pt-space-xs">
+                <a
+                  className="inline-flex px-8 py-3.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm items-center gap-space-xs transition-colors"
+                  href="tel:07881241835"
+                >
+                  <span className="material-symbols-outlined text-[20px]">map</span>
+                  <span>View All Areas We Cover</span>
+                </a>
+              </div>
+            </div>
+            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[420px] rounded-xl overflow-hidden shadow-lg border border-surface-container-high">
+              <iframe
+                src="https://www.google.com/maps?q=Greater+Manchester+and+Yorkshire,+United+Kingdom&output=embed"
+                className="absolute inset-0 w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Map of our coverage area across Greater Manchester and Yorkshire"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -529,70 +541,74 @@ export default function HomePage() {
       {/* SECTION 9: CUSTOMER TESTIMONIALS */}
       <section className="w-full bg-surface-container-low py-space-xl lg:py-24">
         <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
-          <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-xs">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-highest font-label-tech text-[11px] uppercase tracking-wider text-on-surface-variant">
-              Real Breakdown Response Cases
-            </div>
+          <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-sm">
             <h2 className="font-headline-lg text-headline-lg text-on-surface">Trusted When It Matters</h2>
+            <div className="inline-flex items-center gap-3 bg-surface-container-lowest px-5 py-3 rounded-xl shadow-sm">
+              <GoogleIcon className="text-[28px]" />
+              <div className="flex flex-col items-start">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-headline-sm text-headline-sm text-on-surface leading-none">4.9</span>
+                  <span className="text-amber-400 text-[15px] tracking-tight leading-none">★★★★★</span>
+                </div>
+                <span className="font-body-sm text-[12px] text-on-surface-variant">Based on Google reviews</span>
+              </div>
+            </div>
             <span className="font-label-tech text-label-tech text-on-surface-variant uppercase tracking-widest">
               (DEMO CUSTOMER SCENARIOS)
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-            <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-              <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between">
-                  <span className="font-label-tech text-label-tech text-primary font-bold">M60 CORRIDOR • J6</span>
-                  <span className="font-label-tech text-[11px] text-on-surface-variant">22 Mins Arrival</span>
+            {[
+              {
+                initial: 'D',
+                avatarBg: 'bg-primary text-on-primary',
+                name: 'David M.',
+                meta: 'Local Guide · 14 reviews',
+                time: '2 weeks ago',
+                text: 'Stranded on the hard shoulder with complete electrical cut-out at 8 PM. Called the dispatch desk, gave our marker post, and the slide-bed arrived within 25 minutes. Towed safely straight to our local garage.',
+              },
+              {
+                initial: 'S',
+                avatarBg: 'bg-tertiary text-on-tertiary',
+                name: 'Sarah K.',
+                meta: 'Local Guide · 6 reviews',
+                time: '1 month ago',
+                text: 'Punctured tyre with a stripped locking wheel nut in a tight multi-storey car park. Technician brought specialist removal tools and had the spare fitted without any wheel rim scratching. Absolute lifesaver.',
+              },
+              {
+                initial: 'M',
+                avatarBg: 'bg-secondary text-on-secondary',
+                name: 'Marcus L.',
+                meta: '3 reviews',
+                time: '3 months ago',
+                text: 'Delivery van fully loaded with goods lost hydraulic clutch pressure on the M1 slip road. Heavy duty winch recovery handled the payload weight safely and transported directly to our fleet depot.',
+              },
+            ].map((review) => (
+              <div
+                key={review.name}
+                className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm"
+              >
+                <div className="flex items-start justify-between gap-space-sm">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <div
+                      className={`w-11 h-11 rounded-full flex items-center justify-center font-headline-sm text-headline-sm flex-shrink-0 ${review.avatarBg}`}
+                    >
+                      {review.initial}
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-label-lg text-label-lg text-on-surface truncate">{review.name}</p>
+                      <p className="font-body-sm text-[12px] text-on-surface-variant truncate">{review.meta}</p>
+                    </div>
+                  </div>
+                  <GoogleIcon className="text-[18px] flex-shrink-0" />
                 </div>
-                <h3 className="font-headline-sm text-headline-sm text-on-surface">Motorway Alternator Failure</h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  &ldquo;Stranded on the hard shoulder with complete electrical cut-out at 8 PM. Called the dispatch
-                  desk, gave our marker post, and the slide-bed arrived within 25 minutes. Towed safely straight to
-                  our local garage.&rdquo;
-                </p>
-              </div>
-              <div className="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
-                <span className="font-label-md text-label-md text-on-surface">David M. (BMW 3 Series)</span>
-                <span className="font-label-tech text-[11px] text-on-surface-variant">Greater Manchester</span>
-              </div>
-            </div>
-            <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-              <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between">
-                  <span className="font-label-tech text-label-tech text-tertiary font-bold">MANCHESTER CENTRE</span>
-                  <span className="font-label-tech text-[11px] text-on-surface-variant">18 Mins Arrival</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-amber-400 text-[14px] tracking-tight">★★★★★</span>
+                  <span className="font-body-sm text-[12px] text-on-surface-variant">{review.time}</span>
                 </div>
-                <h3 className="font-headline-sm text-headline-sm text-on-surface">Multi-Storey Puncture</h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  &ldquo;Punctured tyre with a stripped locking wheel nut in a tight multi-storey car park. Technician
-                  brought specialist removal tools and had the spare fitted without any wheel rim scratching.
-                  Absolute lifesaver.&rdquo;
-                </p>
+                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">{review.text}</p>
               </div>
-              <div className="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
-                <span className="font-label-md text-label-md text-on-surface">Sarah K. (Audi A1)</span>
-                <span className="font-label-tech text-[11px] text-on-surface-variant">Manchester</span>
-              </div>
-            </div>
-            <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
-              <div className="flex flex-col gap-space-sm">
-                <div className="flex items-center justify-between">
-                  <span className="font-label-tech text-label-tech text-secondary font-bold">M1 YORKSHIRE</span>
-                  <span className="font-label-tech text-[11px] text-on-surface-variant">30 Mins Arrival</span>
-                </div>
-                <h3 className="font-headline-sm text-headline-sm text-on-surface">Commercial Van Clutch Failure</h3>
-                <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  &ldquo;Delivery van fully loaded with goods lost hydraulic clutch pressure on the M1 slip road.
-                  Heavy duty winch recovery handled the payload weight safely and transported directly to our fleet
-                  depot.&rdquo;
-                </p>
-              </div>
-              <div className="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
-                <span className="font-label-md text-label-md text-on-surface">Marcus L. (Transit Custom)</span>
-                <span className="font-label-tech text-[11px] text-on-surface-variant">Yorkshire</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

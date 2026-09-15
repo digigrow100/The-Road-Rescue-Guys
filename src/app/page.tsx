@@ -58,7 +58,11 @@ export default function HomePage() {
                 </span>
               </div>
               <h1 className="font-display-hero text-headline-lg lg:text-display-hero text-on-surface tracking-tight leading-tight">
-                Fast Roadside Help When You Need It Most
+                Fast <span className="text-primary">Vehicle Recovery</span>{' '}
+                <span className="font-body-lg text-headline-sm lg:text-headline-md font-normal text-on-surface-variant align-middle">
+                  and
+                </span>{' '}
+                <span className="text-tertiary">Roadside Assistance</span>
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
                 The Road Rescue Guys provide professional vehicle recovery, roadside assistance and towing when you

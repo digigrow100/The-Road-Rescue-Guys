@@ -71,6 +71,7 @@ export default {
         'space-xs': '0.25rem',
       },
       fontFamily: {
+        poppins: ['Poppins'],
         'headline-lg-mobile': ['Chivo'],
         'display-hero-mobile': ['Chivo'],
         'headline-sm': ['Chivo'],

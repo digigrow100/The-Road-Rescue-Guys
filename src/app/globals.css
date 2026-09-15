@@ -32,4 +32,17 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  /* Icons render as ligature text (e.g. "phone_in_talk"), so if the font is
+     blocked, slow, or still loading, the raw fallback text would otherwise
+     render at full icon size and overflow its container, breaking the
+     layout around it. Locking every icon to a fixed 1em box clips that
+     fallback text instead of letting it spill out. */
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  vertical-align: middle;
 }

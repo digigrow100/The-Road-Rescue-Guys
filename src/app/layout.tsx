@@ -56,10 +56,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
           rel="stylesheet"
         />
+        {/* Best-guess header height so content isn't tucked under the fixed
+            header before Header.tsx measures the real height on hydration —
+            avoids a layout flash on first paint. Header.tsx's ResizeObserver
+            is the source of truth; this is only a same-breakpoint estimate. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var w=window.innerWidth;var h=w<768?170:w<1024?146:118;document.documentElement.style.setProperty('--header-height',h+'px');})();`,
+          }}
+        />
       </head>
       <body className="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary">
         <Header />
-        <main className="w-full pt-28 pb-20 lg:pb-0 bg-surface">
+        <main className="w-full pt-[var(--header-height,7rem)] pb-20 lg:pb-0 bg-surface">
           <div className="flex flex-col w-full">{children}</div>
         </main>
         <MobileCallBar />

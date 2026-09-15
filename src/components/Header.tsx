@@ -57,7 +57,7 @@ export default function Header() {
                 Dispatch Active
               </span>
               <span className="hidden sm:inline text-outline-variant">|</span>
-              <span className="flex items-center gap-1">
+              <span className="hidden sm:flex items-center gap-1">
                 <span className="material-symbols-outlined text-[14px] text-tertiary-fixed">speed</span>Average ETA 25
                 Mins
               </span>
@@ -67,7 +67,7 @@ export default function Header() {
                 Serving Greater Manchester &amp; Yorkshire
               </span>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-3">
               <span className="text-inverse-on-surface/80">Immediate Support:</span>
               <a
                 className="font-bold text-on-tertiary-container hover:text-tertiary-fixed transition-colors"

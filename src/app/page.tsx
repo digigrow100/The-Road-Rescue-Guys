@@ -113,7 +113,7 @@ export default function HomePage() {
                   <span>DEPOT DISPATCH: GREATER MANCHESTER</span>
                 </div>
               </div>
-              <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-6 sm:right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center justify-between gap-space-md">
+              <div className="hidden sm:flex sm:absolute sm:-bottom-6 sm:left-6 sm:right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl items-center justify-between gap-space-md">
                 <div className="flex items-center gap-space-sm min-w-0">
                   <div className="w-11 h-11 rounded-lg bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
                     <span className="material-symbols-outlined text-[24px]">support_agent</span>

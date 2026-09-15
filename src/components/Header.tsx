@@ -49,9 +49,9 @@ export default function Header() {
             <span className="text-inverse-on-surface/80">Immediate Support:</span>
             <a
               className="font-bold text-on-tertiary-container hover:text-tertiary-fixed transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
-              07700 900123
+              07881 241835
             </a>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <a
               className="hidden sm:flex items-center gap-2 text-on-surface hover:text-primary transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <div className="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
                 <span className="material-symbols-outlined text-[18px]">call</span>
@@ -89,12 +89,12 @@ export default function Header() {
                 <span className="font-label-tech text-label-tech text-on-surface-variant uppercase leading-none">
                   24hr Dispatch
                 </span>
-                <span className="font-headline-sm text-label-lg font-bold">07700 900123</span>
+                <span className="font-headline-sm text-label-lg font-bold">07881 241835</span>
               </div>
             </a>
             <a
               className="hidden md:inline-flex items-center justify-center px-space-lg py-3 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:shadow transition-all"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined mr-2 text-[18px]">e911_emergency</span>Call Now
             </a>

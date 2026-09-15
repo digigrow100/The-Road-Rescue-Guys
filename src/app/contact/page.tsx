@@ -19,7 +19,7 @@ const faqItems = [
   {
     question: 'Should I call or use WhatsApp?',
     answer:
-      'If you are in a hazardous or fast-moving traffic situation (such as an active motorway lane or hard shoulder), call 07700 900123 immediately. If you are safe in a lay-by or carpark and want to quickly send your GPS pin and pictures of damage, WhatsApp is ideal.',
+      'If you are in a hazardous or fast-moving traffic situation (such as an active motorway lane or hard shoulder), call 07881 241835 immediately. If you are safe in a lay-by or carpark and want to quickly send your GPS pin and pictures of damage, WhatsApp is ideal.',
   },
   {
     question: 'What details should I send on WhatsApp?',
@@ -84,14 +84,14 @@ export default function ContactPage() {
             <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6">
               <a
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary hover:bg-primary-container text-on-primary rounded shadow-md transition-all text-center"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-                <span className="font-headline-sm text-headline-sm tracking-tight font-bold">Call 07700 900123</span>
+                <span className="font-headline-sm text-headline-sm tracking-tight font-bold">Call 07881 241835</span>
               </a>
               <a
                 className="inline-flex items-center justify-center gap-3 px-7 py-4 bg-surface-container-high hover:bg-surface-variant text-on-surface rounded shadow-sm transition-all text-center"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -171,7 +171,7 @@ export default function ContactPage() {
                   Call Directly
                 </h3>
                 <p className="font-headline-md text-headline-md text-primary font-black tracking-tight mb-4">
-                  07700 900123
+                  07881 241835
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
                   Best for urgent roadside assistance. Speaks straight to a Midlands coordinator without automated
@@ -180,10 +180,10 @@ export default function ContactPage() {
               </div>
               <a
                 className="w-full py-4 px-6 bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-body-lg font-bold rounded text-center shadow transition-all flex items-center justify-center gap-2"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[20px]">e911_emergency</span>
-                <span>Call Now (07700 900123)</span>
+                <span>Call Now (07881 241835)</span>
               </a>
             </div>
             <div className="relative bg-surface-container-lowest rounded-xl p-8 shadow-xl flex flex-col justify-between overflow-hidden">
@@ -201,7 +201,7 @@ export default function ContactPage() {
                   WhatsApp Us
                 </h3>
                 <p className="font-headline-md text-headline-md text-tertiary font-black tracking-tight mb-4">
-                  07700 900123
+                  07881 241835
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
                   Send your live location pin, photos of the breakdown, and vehicle details directly to our central
@@ -210,7 +210,7 @@ export default function ContactPage() {
               </div>
               <a
                 className="w-full py-4 px-6 bg-tertiary-container hover:bg-tertiary text-on-tertiary font-headline-sm text-body-lg font-bold rounded text-center shadow transition-all flex items-center justify-center gap-2"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -233,7 +233,7 @@ export default function ContactPage() {
                   Email Enquiry
                 </h3>
                 <p className="font-headline-sm text-body-lg text-on-surface font-bold truncate mb-4">
-                  help@theroadrescueguys.co.uk
+                  theroadrescueguys@gmail.com
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
                   For general queries, pre-booked transit, fleet account setup, and invoicing queries. Typical
@@ -242,7 +242,7 @@ export default function ContactPage() {
               </div>
               <a
                 className="w-full py-3.5 px-6 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-headline-sm text-body-md font-bold rounded text-center shadow-sm transition-all flex items-center justify-center gap-2"
-                href="mailto:help@theroadrescueguys.co.uk"
+                href="mailto:theroadrescueguys@gmail.com"
               >
                 <span className="material-symbols-outlined text-[18px]">send</span>
                 <span>Send Email</span>
@@ -347,9 +347,9 @@ export default function ContactPage() {
                       </span>
                       <a
                         className="font-headline-sm text-body-md font-bold text-on-surface hover:text-primary transition-colors"
-                        href="tel:07700900123"
+                        href="tel:07881241835"
                       >
-                        07700 900123
+                        07881 241835
                       </a>
                     </div>
                   </div>
@@ -361,11 +361,11 @@ export default function ContactPage() {
                       </span>
                       <a
                         className="font-headline-sm text-body-md font-bold text-on-surface hover:text-tertiary transition-colors"
-                        href="https://wa.me/447700900123"
+                        href="https://wa.me/447881241835"
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        07700 900123
+                        07881 241835
                       </a>
                     </div>
                   </div>
@@ -377,9 +377,9 @@ export default function ContactPage() {
                       </span>
                       <a
                         className="font-body-md text-on-surface font-semibold hover:text-primary transition-colors"
-                        href="mailto:help@theroadrescueguys.co.uk"
+                        href="mailto:theroadrescueguys@gmail.com"
                       >
-                        help@theroadrescueguys.co.uk
+                        theroadrescueguys@gmail.com
                       </a>
                     </div>
                   </div>
@@ -444,14 +444,14 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
             <a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-body-lg font-bold rounded shadow-lg transition-all"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-              <span>Call Now — 07700 900123</span>
+              <span>Call Now — 07881 241835</span>
             </a>
             <a
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent hover:bg-white/10 text-white font-headline-sm text-body-lg font-bold rounded shadow-none transition-all outline outline-1 outline-white/30"
-              href="https://wa.me/447700900123"
+              href="https://wa.me/447881241835"
               rel="noopener noreferrer"
               target="_blank"
             >

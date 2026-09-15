@@ -36,14 +36,14 @@ export default function AboutUsPage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                 <a
                   className="inline-flex items-center justify-center gap-3 px-space-lg py-4 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-md transition-all"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
                   <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-                  <span>Call Now (07700 900123)</span>
+                  <span>Call Now (07881 241835)</span>
                 </a>
                 <a
                   className="inline-flex items-center justify-center gap-3 px-space-lg py-4 bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-lg text-label-lg rounded shadow-sm transition-all"
-                  href="https://wa.me/447700900123"
+                  href="https://wa.me/447881241835"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -397,14 +397,14 @@ export default function AboutUsPage() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 w-full sm:w-auto">
             <a
               className="inline-flex items-center justify-center gap-3 px-space-xl py-4 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg rounded shadow-lg transition-all font-bold"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-              <span>Call 07700 900123</span>
+              <span>Call 07881 241835</span>
             </a>
             <a
               className="inline-flex items-center justify-center gap-3 px-space-xl py-4 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-label-lg text-label-lg rounded shadow transition-all font-bold"
-              href="https://wa.me/447700900123"
+              href="https://wa.me/447881241835"
               rel="noopener noreferrer"
               target="_blank"
             >

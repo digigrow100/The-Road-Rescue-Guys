@@ -65,14 +65,14 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto pt-space-xs">
                 <a
                   className="h-14 px-8 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-all"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
                   <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
                   <span>Call Now</span>
                 </a>
                 <a
                   className="h-14 px-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors"
-                  href="https://wa.me/447700900123"
+                  href="https://wa.me/447881241835"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -126,9 +126,9 @@ export default function HomePage() {
                 </div>
                 <a
                   className="px-4 py-2.5 bg-primary text-on-primary font-headline-sm text-[16px] rounded-lg hover:bg-secondary transition-colors whitespace-nowrap"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
-                  07700 900123
+                  07881 241835
                 </a>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
                 <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
@@ -152,13 +152,13 @@ export default function HomePage() {
                   Direct Emergency Call
                 </span>
                 <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07700 900123
+                  07881 241835
                 </span>
               </div>
             </a>
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="https://wa.me/447700900123"
+              href="https://wa.me/447881241835"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -170,13 +170,13 @@ export default function HomePage() {
                   WhatsApp Live Pin
                 </span>
                 <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07700 900123
+                  07881 241835
                 </span>
               </div>
             </a>
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="mailto:help@theroadrescueguys.co.uk"
+              href="mailto:theroadrescueguys@gmail.com"
             >
               <div className="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
                 <span className="material-symbols-outlined text-[20px]">mail</span>
@@ -186,7 +186,7 @@ export default function HomePage() {
                   Email Inquiries
                 </span>
                 <span className="font-body-md text-[14px] text-on-surface block font-semibold truncate">
-                  help@theroadrescueguys.co.uk
+                  theroadrescueguys@gmail.com
                 </span>
               </div>
             </a>
@@ -341,14 +341,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-space-sm flex-shrink-0 w-full sm:w-auto">
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-colors"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
-                <span>Call 07700 900123</span>
+                <span>Call 07881 241835</span>
               </a>
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-secondary hover:bg-on-secondary-container text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -441,7 +441,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-headline-sm text-headline-sm text-on-surface">Call or WhatsApp</h3>
               <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Reach our control desk on <strong>07700 900123</strong> or drop your live GPS pin on WhatsApp. State
+                Reach our control desk on <strong>07881 241835</strong> or drop your live GPS pin on WhatsApp. State
                 your vehicle model and the immediate symptom.
               </p>
             </div>
@@ -593,7 +593,7 @@ export default function HomePage() {
           <div className="flex justify-center pt-space-xs">
             <a
               className="px-8 py-3.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm flex items-center gap-space-xs transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined text-[20px]">map</span>
               <span>View All Areas We Cover</span>
@@ -716,14 +716,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-space-sm w-full sm:w-auto pt-space-xs">
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-lg transition-colors"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-                <span>Direct Call: 07700 900123</span>
+                <span>Direct Call: 07881 241835</span>
               </a>
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors shadow-md"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -739,7 +739,7 @@ export default function HomePage() {
               <span>•</span>
               <span className="flex items-center gap-1">
                 <span className="material-symbols-outlined text-[16px] text-primary-fixed">mail</span>
-                help@theroadrescueguys.co.uk
+                theroadrescueguys@gmail.com
               </span>
             </div>
           </div>

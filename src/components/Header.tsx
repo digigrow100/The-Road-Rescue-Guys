@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import logo from '../assets/images/logo-full.webp';
+import logo from '../assets/the-road-rescue-guys-logo.webp';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -59,7 +59,7 @@ export default function Header() {
       <div className="bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_2px_12px_rgba(23,28,34,0.08)] border-b border-surface-container-high">
         <div className="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-4">
           <Link className="flex items-center group" href="/">
-            <Image src={logo} alt="The Road Rescue Guys — UK Breakdown & Recovery" className="h-10 w-auto sm:h-12" priority />
+            <Image src={logo} alt="The Road Rescue Guys — UK Breakdown & Recovery" className="h-14 w-auto sm:h-16" priority />
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (

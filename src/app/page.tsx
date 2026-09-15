@@ -57,10 +57,14 @@ export default function HomePage() {
                   24/7 Vehicle Recovery
                 </span>
               </div>
-              <h1 className="font-poppins text-headline-lg-mobile md:text-headline-lg lg:text-display-hero text-on-surface tracking-tight leading-tight">
-                <span className="block">Fast Vehicle Recovery</span>
-                <span className="block">and Roadside Assistance</span>
-                <span className="block text-primary text-headline-sm md:text-headline-md lg:text-headline-lg whitespace-nowrap mt-1">
+              <h1 className="font-poppins text-on-surface tracking-tight">
+                <span className="block text-[30px] sm:text-[38px] md:text-[42px] xl:text-[48px] leading-[1.08] font-extrabold">
+                  Fast Vehicle Recovery
+                </span>
+                <span className="block text-[30px] sm:text-[38px] md:text-[42px] xl:text-[48px] leading-[1.08] font-extrabold">
+                  and Roadside Assistance
+                </span>
+                <span className="block text-primary text-[19px] sm:text-[24px] md:text-[27px] leading-[1.2] font-bold mt-1.5 whitespace-nowrap">
                   Greater Manchester &amp; Yorkshire
                 </span>
               </h1>

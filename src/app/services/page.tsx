@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import FaqAccordion from '../../components/FaqAccordion';
+import heroImage from '../../assets/images/a_realistic_high_resolution_roadside_motorway_sce.webp';
+import vehicleRecoveryImage from '../../assets/images/a_wide_cinematic_high_resolution_roadside_motorw.webp';
+import roadsideAssistanceImage from '../../assets/images/a_realistic_high_resolution_sharp_daytime_outdoo.webp';
+import towingImage from '../../assets/images/rainy_motorway_tow_truck_recovery.webp';
 
 export const metadata: Metadata = {
   title: 'Services | The Road Rescue Guys',
@@ -101,7 +105,7 @@ export default function ServicesPage() {
                   priority
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcMaEWYab-JkWUKRkbidR4a6ivlzvE37CF56XeSHhSGshRgdlNsCoEyFmIyMvUdUCX8wZUw2b6ksRfjAg1B_RxA5N_QQTtaFNfeQ42npMYmnDlSCKnLi0T10ysvfLZC69no_YZ19HgAubrCY-UvkFcrFFwkgpbBZvV-wOGWKCXbPrmTpaW4ccFxJnp4FqHTVfFuwogqDM7MiX6wc2WjlyS_f3QnDr4DXcoDiGYjaNE7Z2opcCtwxwq"
+                  src={heroImage}
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-inverse-surface/90 backdrop-blur-md p-3.5 rounded-xl flex items-center justify-between text-inverse-on-surface">
                   <div className="flex items-center gap-3 min-w-0">
@@ -156,7 +160,7 @@ export default function ServicesPage() {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_cAmI9Sc67JAIiaO6BPD5Ea7C7lFOfkgaVYUlO9Is50hnnYd3x0Ln0EbQJfgP2t60opKNPtEh4bX1WaIhamHAN4nrkCoWuFSsgLb-oerEcn1JuGY2-1cHePcuNcoHWW_vkQsXC_pB4AHfsvpRpkrqIxu0b3z_SZcEx41Hx8BXYw_Yh7qlaQaqeaK_6hYJnFyHhSVZu3mUn7JkiITZD8jF3eUXXQrMccpF2vzVIk0i9qAOfmpETW8C"
+                  src={vehicleRecoveryImage}
                 />
                 <div className="absolute top-4 left-4 bg-primary text-on-primary font-label-tech text-label-tech px-3 py-1 rounded shadow">
                   FLATBED DISPATCH
@@ -252,7 +256,7 @@ export default function ServicesPage() {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYpe18ZoxcV0tcEPjddNJC3JZdN4dqPjKaFCaWQvcQ_UOesVE6fD-uZMFj9UMhXgaU02Zu1bi6xO1EDvhQSxroeYsIEidiIxDUvqIzY8SMRq66d55UUHg_hyXAeWm2jqJZFRqMR93H4Vl5on6yhfmnurSsPYJ9DpCQJD37AiVtGlqbhOmjunvM_gEAV8zLeKXxz6Dg9jeuaYF9X1La2NhzBNnUYjqt9UQWmZixDMytmYxI75tv2S8v"
+                  src={roadsideAssistanceImage}
                 />
                 <div className="absolute top-4 right-4 bg-tertiary text-on-tertiary font-label-tech text-label-tech px-3 py-1 rounded shadow">
                   RAPID PATROL VAN
@@ -274,7 +278,7 @@ export default function ServicesPage() {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKgmKCj8IiJq8Bs9q72zs2eDwrILEfnrHHjxiJWH6Y6CORzXbvdp3wW_KByqhAWKlLVqcet8dYHVDrXVorDRyjGxVDW-ZUzuffWxQ1YOJn1z5j6Fj0zZlJ64mMnf7rpL6RNfhnQjqrnG8zUvWmCaD5LhLCydI-LF1gAS3nQ1P37T2gy7ajvJC11q4dwLDgFhdMRjzFG6IV_xC1gqbp4MMEEtEb4hztfSpoGNVAZvYpYyLIOGMAbjcA"
+                  src={towingImage}
                 />
                 <div className="absolute top-4 left-4 bg-inverse-surface text-inverse-on-surface font-label-tech text-label-tech px-3 py-1 rounded shadow">
                   SPEC-LIFT TIGHT ACCESS

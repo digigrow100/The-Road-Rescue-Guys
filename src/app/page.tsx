@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FaqAccordion from '../components/FaqAccordion';
+import heroImage from '../assets/images/a_realistic_urban_street_scene_in_daylight_wide_a.webp';
+import vehicleRecoveryCardImage from '../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
+import roadsideAssistanceCardImage from '../assets/images/roadside_battery_assistance_in_a_suburban_street.webp';
+import towingCardImage from '../assets/images/rainy_uk_roundabout_recovery_tow_truck.webp';
+import aboutSectionImage from '../assets/images/roadside_assistance_in_the_rain.webp';
+import finalCtaImage from '../assets/images/rainy_motorway_recovery_scene.webp';
 
 const faqItems = [
   {
@@ -98,7 +104,7 @@ export default function HomePage() {
                   priority
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxNlzFMpWz2XnicH7G0EfRpE4zD4O9bP8LdLdxZKqOztX8DxtY92_zAN5KbMuqBxcLrca0Q2I0ZLhTPonJ8bWKvp5ERBAGiRqLFhovsusBMZSRfhJaIYV1pZPmjlu26JfBJAt9lZJSPZ3d82LmqWD726t49JJyZ5tcWn3EgFAK6dx7Px3vvwmgi1Ir9420pAZl-3spXR2VPG1Si7bvqeGp_Q71RPJnc3do4jijjlUeXxQyvk-sW9O"
+                  src={heroImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 text-inverse-on-surface font-label-tech text-label-tech">
@@ -222,7 +228,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxNlzFMpWz2XnicH7G0EfRpE4zD4O9bP8LdLdxZKqOztX8DxtY92_zAN5KbMuqBxcLrca0Q2I0ZLhTPonJ8bWKvp5ERBAGiRqLFhovsusBMZSRfhJaIYV1pZPmjlu26JfBJAt9lZJSPZ3d82LmqWD726t49JJyZ5tcWn3EgFAK6dx7Px3vvwmgi1Ir9420pAZl-3spXR2VPG1Si7bvqeGp_Q71RPJnc3do4jijjlUeXxQyvk-sW9O"
+                  src={vehicleRecoveryCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-primary text-on-primary font-label-tech text-[11px] px-2.5 py-1 rounded">
                   PRIORITY RECOVERY
@@ -255,7 +261,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBP7yBFw7i3eGxcgkvvZw9aYExzspeTFn-5CBjPFcG70Wx9oYHH9JUAKijRBLuEK0TfZLtNx4bm8KJwX204s258KrPiy-bQzyNJ6ZBCdjWTzlPYJjC6p7Xq3Q-nKcmJci4PK_8XnCCWt6DPZ-Oo_MAv6VW5jOoQQWY6iBzzmmnnuuYQtt02bhN0FX7pO08vmVmEmTlTjIy6nsZK3DI228lk5BYlH-3ozoZJMkRcIZszaqicabgnGVe"
+                  src={roadsideAssistanceCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-tertiary text-on-tertiary font-label-tech text-[11px] px-2.5 py-1 rounded">
                   RAPID RESOLUTION
@@ -288,7 +294,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrrUWhPUbTqaaUkaG7xNVkSOw0BUkB24DkCuTJ3XtyHv0JNEUVjbRT3bcoIiRkkxZK75OofTJM09KtFpt1wRLyvxnz1YRwezOR3Q-AL8OQi9S2wtwpjTpFafiXXwLmbQ-eW9D1KMqlJt7nTtWJTw3SwMj0U_e3UBCLzkR6XR0EQEIxEa5XblYarlo9Rf_u_U2d-GydmwbccsyvTul1kbFVNP-2pfcigO8rw0sTr1kX21sGeXbzrUdb"
+                  src={towingCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-inverse-surface text-inverse-on-surface font-label-tech text-[11px] px-2.5 py-1 rounded">
                   LONG DISTANCE
@@ -484,7 +490,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1VYYvTQmWi5etN6D_h0SgjIzoIXznExg2O7x52g-jKTu6xGGtXiMGzGbUbR8n9hSqBiup6V3lj9e0pHeAHNWuKXR1IGkXfuZ01O3R3QTLSzWYjeEhkii7J1JuEVVlh6OKH1JOYNph_Mw4sbcCwsylbeYbzwUjhj02xUXE-DNTzCmLd95G7kIr6dU8Atf1T_bRWcimz79CS6IO7ZVgzySmhAhi-sTzMmTPSwwxgBIem-5Qt6P7FSGQ9F7w"
+                  src={aboutSectionImage}
                 />
               </div>
               <div className="mt-4 p-space-md bg-surface-container-low rounded-lg flex items-center gap-space-sm">
@@ -691,7 +697,7 @@ export default function HomePage() {
             fill
             sizes="100vw"
             className="object-cover object-center opacity-25 filter grayscale contrast-125"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1VPwNlikpgf3cD408_aI8LMu9Fq2QNEhDAsPACta4poykXNohz330p0CiXa8hEU06Knh3qIYkjZ-e2_uS_x6nHSETKA4nukQnaF6JTUFzb5736UMCbqij50gmKNRWEqPP76-_qJv6ujeshwZOv9KlJNGUtzXWiI5utcZXeqJb59f5cXR0rhPfFhQVuPK8yQXKPeuY5HkFQe3oP6Zm8R5c6Rd_-f2EOqdH_CX3YKw2c5tcDE-EfdXe_1Sg"
+            src={finalCtaImage}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-inverse-surface/70"></div>
         </div>

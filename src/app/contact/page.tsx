@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import ContactForm from '../../components/ContactForm';
 import FaqAccordion from '../../components/FaqAccordion';
+import heroImage from '../../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
 
 export const metadata: Metadata = {
   title: 'Contact Us | The Road Rescue Guys',
@@ -112,7 +113,7 @@ export default function ContactPage() {
                   priority
                   sizes="(min-width: 1024px) 42vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPXikcJ0m48QHHtGPv8mNi41510MrwjBJGLbVftFwMObZpbOTE5fzWePyz57cI2q2j_SoadFQlV5tbn9lYsXPKnD2ZtSyqttMeI2gR1SLRyYpSNQksnEHGEnbxBjRoA-i6u7-nKRdENPHoBk1yktORPhnnOMcLQ7H6K_DDD0y_7DBVARknhp7rt68u_beklxWcsNjQTSFqaG_GjVIugXSB7ijoHT0NTZQ7J3gCkVoYNLMwk5eLK7Oj"
+                  src={heroImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/30 to-transparent"></div>
               </div>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FaqAccordion from '../components/FaqAccordion';
+import WhatsAppIcon from '../components/WhatsAppIcon';
 import heroImage from '../assets/images/a_realistic_urban_street_scene_in_daylight_wide_a.webp';
 import vehicleRecoveryCardImage from '../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
 import roadsideAssistanceCardImage from '../assets/images/roadside_battery_assistance_in_a_suburban_street.webp';
@@ -37,7 +38,7 @@ const faqItems = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'We provide comprehensive recovery throughout Birmingham, London, Manchester, Liverpool, Leeds, Sheffield, Bristol, and their connecting motorway corridors (M1, M5, M6, M40, M42, M25).',
+      'We provide comprehensive recovery throughout Greater Manchester and Yorkshire, and their connecting motorway corridors (M60, M62, M1, A1(M)).',
   },
 ];
 
@@ -76,7 +77,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="material-symbols-outlined text-[20px] text-tertiary">chat</span>
+                  <WhatsAppIcon className="text-[20px] text-tertiary" />
                   <span>WhatsApp Us</span>
                 </a>
               </div>
@@ -109,7 +110,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 text-inverse-on-surface font-label-tech text-label-tech">
                   <span className="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
-                  <span>DEPOT DISPATCH: BIRMINGHAM CENTRAL</span>
+                  <span>DEPOT DISPATCH: GREATER MANCHESTER</span>
                 </div>
               </div>
               <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:left-6 sm:right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl flex items-center justify-between gap-space-md">
@@ -130,78 +131,6 @@ export default function HomePage() {
                 >
                   07881 241835
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2: QUICK CONTACT STRIP */}
-      <section className="w-full bg-surface-container-low py-space-md">
-        <div className="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
-            <a
-              className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="tel:07881241835"
-            >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
-              </div>
-              <div className="min-w-0">
-                <span className="font-label-tech text-[11px] text-on-surface-variant uppercase tracking-wider block">
-                  Direct Emergency Call
-                </span>
-                <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07881 241835
-                </span>
-              </div>
-            </a>
-            <a
-              className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="https://wa.me/447881241835"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <div className="w-10 h-10 rounded-lg bg-tertiary-container/15 text-tertiary flex items-center justify-center group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
-                <span className="material-symbols-outlined text-[20px]">chat</span>
-              </div>
-              <div className="min-w-0">
-                <span className="font-label-tech text-[11px] text-on-surface-variant uppercase tracking-wider block">
-                  WhatsApp Live Pin
-                </span>
-                <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07881 241835
-                </span>
-              </div>
-            </a>
-            <a
-              className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="mailto:theroadrescueguys@gmail.com"
-            >
-              <div className="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
-                <span className="material-symbols-outlined text-[20px]">mail</span>
-              </div>
-              <div className="min-w-0">
-                <span className="font-label-tech text-[11px] text-on-surface-variant uppercase tracking-wider block">
-                  Email Inquiries
-                </span>
-                <span className="font-body-md text-[14px] text-on-surface block font-semibold truncate">
-                  theroadrescueguys@gmail.com
-                </span>
-              </div>
-            </a>
-            <div className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm flex items-center gap-space-sm">
-              <div className="w-10 h-10 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center">
-                <span className="material-symbols-outlined text-[20px]">schedule</span>
-              </div>
-              <div className="min-w-0">
-                <span className="font-label-tech text-[11px] text-on-surface-variant uppercase tracking-wider block">
-                  Operational Status
-                </span>
-                <span className="font-headline-sm text-[15px] text-tertiary block font-bold flex items-center gap-1.5 truncate">
-                  <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
-                  24/7 Active Crews
-                </span>
               </div>
             </div>
           </div>
@@ -352,7 +281,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="material-symbols-outlined text-[20px]">chat</span>
+                <WhatsAppIcon className="text-[20px]" />
                 <span>WhatsApp Us</span>
               </a>
             </div>
@@ -513,7 +442,7 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                Headquartered at <strong>25 Kingsway, Birmingham, B4 7SL</strong>, The Road Rescue Guys operate a
+                Serving <strong>Greater Manchester and Yorkshire</strong>, The Road Rescue Guys operate a
                 modern recovery logistics network built on honesty, rapid arrival, and mechanical expertise. We
                 believe stranded drivers should never be held hostage by expensive recurring subscriptions or opaque
                 call-out tariffs.
@@ -564,14 +493,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-space-md">
             {[
-              { name: 'Birmingham', tag: 'HQ Hub', tagStyle: 'primary', detail: '25 Kingsway, B4 7SL • 15-20 min ETA' },
-              { name: 'London', tag: 'Active', tagStyle: 'default', detail: 'M25, North/South Circular • 25-35 min' },
-              { name: 'Manchester', tag: 'Active', tagStyle: 'default', detail: 'Greater Manchester • M60 Ring' },
-              { name: 'Liverpool', tag: 'Active', tagStyle: 'default', detail: 'Merseyside • M62 Corridor' },
-              { name: 'Leeds', tag: 'Active', tagStyle: 'default', detail: 'West Yorkshire • M1 / M621' },
-              { name: 'Sheffield', tag: 'Active', tagStyle: 'default', detail: 'South Yorkshire • M1 Junction 33-35' },
-              { name: 'Bristol', tag: 'Active', tagStyle: 'default', detail: 'M4 / M5 Interchange • Southwest' },
-              { name: 'Motorways', tag: '24/7 Patrol', tagStyle: 'primary', detail: 'M1, M4, M5, M6, M40, M42' },
+              { name: 'Greater Manchester', tag: 'HQ Hub', tagStyle: 'primary', detail: 'M60 Ring • 15-20 min ETA' },
+              { name: 'Yorkshire', tag: 'Active', tagStyle: 'default', detail: 'West & South Yorkshire • M1 / M621' },
+              { name: 'Motorways', tag: '24/7 Patrol', tagStyle: 'primary', detail: 'M60, M62, M1, A1(M)' },
             ].map((area) => (
               <div key={area.name} className="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-1">
                 <div className="flex items-center justify-between">
@@ -618,7 +542,7 @@ export default function HomePage() {
             <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="font-label-tech text-label-tech text-primary font-bold">M6 CORRIDOR • J6</span>
+                  <span className="font-label-tech text-label-tech text-primary font-bold">M60 CORRIDOR • J6</span>
                   <span className="font-label-tech text-[11px] text-on-surface-variant">22 Mins Arrival</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface">Motorway Alternator Failure</h3>
@@ -630,7 +554,7 @@ export default function HomePage() {
               </div>
               <div className="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
                 <span className="font-label-md text-label-md text-on-surface">David M. (BMW 3 Series)</span>
-                <span className="font-label-tech text-[11px] text-on-surface-variant">Birmingham</span>
+                <span className="font-label-tech text-[11px] text-on-surface-variant">Greater Manchester</span>
               </div>
             </div>
             <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
@@ -654,7 +578,7 @@ export default function HomePage() {
             <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
               <div className="flex flex-col gap-space-sm">
                 <div className="flex items-center justify-between">
-                  <span className="font-label-tech text-label-tech text-secondary font-bold">M1 SOUTHBOUND</span>
+                  <span className="font-label-tech text-label-tech text-secondary font-bold">M1 YORKSHIRE</span>
                   <span className="font-label-tech text-[11px] text-on-surface-variant">30 Mins Arrival</span>
                 </div>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface">Commercial Van Clutch Failure</h3>
@@ -666,7 +590,7 @@ export default function HomePage() {
               </div>
               <div className="pt-space-xs border-t border-surface-variant/40 flex items-center justify-between">
                 <span className="font-label-md text-label-md text-on-surface">Marcus L. (Transit Custom)</span>
-                <span className="font-label-tech text-[11px] text-on-surface-variant">Northampton</span>
+                <span className="font-label-tech text-[11px] text-on-surface-variant">Yorkshire</span>
               </div>
             </div>
           </div>
@@ -727,14 +651,14 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="material-symbols-outlined text-[22px] text-tertiary">chat</span>
+                <WhatsAppIcon className="text-[22px] text-tertiary" />
                 <span>WhatsApp Us</span>
               </a>
             </div>
             <div className="pt-space-md flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-label-tech text-[12px] text-surface-variant">
               <span className="flex items-center gap-1">
-                <span className="material-symbols-outlined text-[16px] text-primary-fixed">pin_drop</span>25
-                Kingsway, Birmingham, B4 7SL
+                <span className="material-symbols-outlined text-[16px] text-primary-fixed">pin_drop</span>
+                Greater Manchester &amp; Yorkshire
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">

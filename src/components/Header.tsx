@@ -63,8 +63,8 @@ export default function Header() {
               </span>
               <span className="hidden md:inline text-outline-variant">|</span>
               <span className="hidden md:flex items-center gap-1">
-                <span className="material-symbols-outlined text-[14px] text-outline-variant">warehouse</span>Depot: 25
-                Kingsway, Birmingham, B4 7SL
+                <span className="material-symbols-outlined text-[14px] text-outline-variant">warehouse</span>
+                Serving Greater Manchester &amp; Yorkshire
               </span>
             </div>
             <div className="flex items-center gap-3">

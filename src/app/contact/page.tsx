@@ -2,19 +2,20 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import ContactForm from '../../components/ContactForm';
 import FaqAccordion from '../../components/FaqAccordion';
+import WhatsAppIcon from '../../components/WhatsAppIcon';
 import heroImage from '../../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
 
 export const metadata: Metadata = {
   title: 'Contact Us | The Road Rescue Guys',
   description:
-    'Contact The Road Rescue Guys by phone, WhatsApp or email for vehicle recovery, roadside assistance or towing. 24/7 Birmingham dispatch centre active now.',
+    'Contact The Road Rescue Guys by phone, WhatsApp or email for vehicle recovery, roadside assistance or towing. 24/7 dispatch centre active now across Greater Manchester and Yorkshire.',
 };
 
 const faqItems = [
   {
     question: 'Are you available 24/7?',
     answer:
-      'Yes, our Birmingham recovery operations control room and heavy flatbed units are manned 24 hours a day, 7 days a week, 365 days a year. Bank holidays and adverse weather events included.',
+      'Yes, our recovery operations control room and heavy flatbed units are manned 24 hours a day, 7 days a week, 365 days a year. Bank holidays and adverse weather events included.',
   },
   {
     question: 'Should I call or use WhatsApp?',
@@ -34,7 +35,7 @@ const faqItems = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'Our priority rapid zone encompasses Birmingham, Solihull, Wolverhampton, Coventry, Walsall, Dudley, and the entire West Midlands motorway spine (M6, M5, M42, M54). We also offer nationwide transit to recover stranded vehicles back home or to specialized repair centers.',
+      'Our priority rapid zone encompasses Greater Manchester and Yorkshire, and their connecting motorway spine (M60, M62, M1, A1(M)). We also offer nationwide transit to recover stranded vehicles back home or to specialized repair centers.',
   },
 ];
 
@@ -49,14 +50,14 @@ export default function ContactPage() {
               <span className="w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span>
             </span>
             <span className="font-label-tech text-label-tech uppercase tracking-wider text-on-surface-variant font-bold">
-              Midlands Recovery Status:
+              Regional Recovery Status:
             </span>
             <span className="font-label-tech text-label-tech text-tertiary font-bold">
               HIGH READINESS (PATROLS ON STANDBY)
             </span>
           </div>
           <div className="flex items-center gap-4 text-xs font-label-tech text-on-surface-variant">
-            <span className="hidden sm:inline">M6 • M5 • M42 • A38(M) Corridor Coverage</span>
+            <span className="hidden sm:inline">M60 • M62 • M1 • A1(M) Corridor Coverage</span>
             <span className="text-outline-variant">•</span>
             <span className="font-semibold text-primary">Avg 25-35m roadside response</span>
           </div>
@@ -79,7 +80,7 @@ export default function ContactPage() {
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
               For vehicle recovery, roadside assistance or towing, contact The Road Rescue Guys by phone, WhatsApp or
-              email. Our 24/7 Birmingham dispatch centre is active right now.
+              email. Our 24/7 dispatch centre is active right now.
             </p>
             <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6">
               <a
@@ -95,13 +96,13 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="material-symbols-outlined text-[22px] text-tertiary">chat</span>
+                <WhatsAppIcon className="text-[22px] text-tertiary" />
                 <span className="font-headline-sm text-headline-sm font-bold">WhatsApp Us</span>
               </a>
             </div>
             <div className="flex items-center gap-3 text-on-surface-variant font-label-md text-label-md">
               <span className="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
-              <span>Average response time 25–35 mins across West Midlands • Available 24/7</span>
+              <span>Average response time 25–35 mins across Greater Manchester & Yorkshire • Available 24/7</span>
             </div>
           </div>
           <div className="lg:col-span-5 relative">
@@ -127,7 +128,7 @@ export default function ContactPage() {
                       Immediate Central Dispatch
                     </span>
                     <span className="font-headline-sm text-body-md font-bold text-on-surface truncate">
-                      Central Hub: 25 Kingsway, Birmingham B4 7SL
+                      Serving Greater Manchester & Yorkshire
                     </span>
                   </div>
                 </div>
@@ -174,7 +175,7 @@ export default function ContactPage() {
                   07881 241835
                 </p>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
-                  Best for urgent roadside assistance. Speaks straight to a Midlands coordinator without automated
+                  Best for urgent roadside assistance. Speaks straight to a regional coordinator without automated
                   menus or hold queues.
                 </p>
               </div>
@@ -191,7 +192,7 @@ export default function ContactPage() {
               <div>
                 <div className="flex items-center justify-between mb-6">
                   <span className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-tertiary-container text-on-tertiary">
-                    <span className="material-symbols-outlined text-[26px]">chat</span>
+                    <WhatsAppIcon className="text-[26px]" />
                   </span>
                   <span className="px-2.5 py-1 bg-tertiary/10 text-tertiary font-label-tech text-label-tech rounded uppercase font-bold">
                     Live GPS Sharing
@@ -354,7 +355,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-tertiary text-[20px] mt-0.5">chat</span>
+                    <WhatsAppIcon className="text-tertiary text-[20px] mt-0.5" />
                     <div>
                       <span className="block text-xs uppercase font-label-tech text-on-surface-variant">
                         WhatsApp Incident Channel
@@ -390,7 +391,7 @@ export default function ContactPage() {
                         Main Dispatch Compound
                       </span>
                       <span className="font-body-md text-on-surface font-semibold">
-                        25 Kingsway, Birmingham, B4 7SL, United Kingdom
+                        Greater Manchester &amp; Yorkshire, United Kingdom
                       </span>
                     </div>
                   </div>
@@ -439,7 +440,7 @@ export default function ContactPage() {
           </h2>
           <p className="font-body-lg text-body-lg text-inverse-on-surface/85 max-w-2xl mx-auto mb-10 leading-relaxed">
             Don&apos;t stay waiting in the cold. Contact our dispatch team now for rapid recovery or roadside
-            support. Average arrival within 25–35 minutes across the Midlands.
+            support. Average arrival within 25–35 minutes across Greater Manchester &amp; Yorkshire.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
             <a
@@ -455,7 +456,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-[22px] text-tertiary-fixed">chat</span>
+              <WhatsAppIcon className="text-[22px] text-tertiary-fixed" />
               <span>WhatsApp Us</span>
             </a>
           </div>

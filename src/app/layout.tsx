@@ -4,12 +4,37 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import MobileCallBar from '../components/MobileCallBar';
 
+const title = 'The Road Rescue Guys | 24/7 UK Vehicle Recovery & Roadside Assistance';
+const description =
+  'Professional vehicle recovery, roadside assistance and towing across Birmingham and the UK. 24/7 dispatch, transparent pricing, average 25 minute ETA.';
+
 export const metadata: Metadata = {
-  title: 'The Road Rescue Guys | 24/7 UK Vehicle Recovery & Roadside Assistance',
-  description:
-    'Professional vehicle recovery, roadside assistance and towing across Birmingham and the UK. 24/7 dispatch, transparent pricing, average 25 minute ETA.',
+  metadataBase: new URL('https://theroadrescueguys.co.uk'),
+  title,
+  description,
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    title,
+    description,
+    url: 'https://theroadrescueguys.co.uk',
+    siteName: 'The Road Rescue Guys',
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: ['/og-image.png'],
   },
 };
 

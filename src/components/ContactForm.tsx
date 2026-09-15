@@ -78,7 +78,7 @@ export default function ContactForm() {
             className="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner"
             id="locationPostcode"
             name="locationPostcode"
-            placeholder="e.g. Birmingham B4 7SL or M6 J6"
+            placeholder="e.g. Manchester M1 1AE or M60 J6"
             type="text"
           />
         </div>

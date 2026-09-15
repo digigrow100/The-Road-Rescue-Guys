@@ -6,7 +6,7 @@ import MobileCallBar from '../components/MobileCallBar';
 
 const title = 'The Road Rescue Guys | 24/7 UK Vehicle Recovery & Roadside Assistance';
 const description =
-  'Professional vehicle recovery, roadside assistance and towing across Birmingham and the UK. 24/7 dispatch, transparent pricing, average 25 minute ETA.';
+  'Professional vehicle recovery, roadside assistance and towing across Greater Manchester, Yorkshire and the UK. 24/7 dispatch, transparent pricing, average 25 minute ETA.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://theroadrescueguys.co.uk'),

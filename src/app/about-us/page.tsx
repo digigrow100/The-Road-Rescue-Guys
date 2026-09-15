@@ -5,11 +5,12 @@ import whoWeAreImage from '../../assets/images/roadside_diagnostics_on_a_rainy_s
 import vehicleRecoveryImage from '../../assets/images/rainy_motorway_breakdown_recovery.webp';
 import roadsideAssistanceImage from '../../assets/images/a_realistic_documentary_style_roadside_assistance.webp';
 import towingImage from '../../assets/images/yellow_recovery_truck_at_a_roundabout.webp';
+import WhatsAppIcon from '../../components/WhatsAppIcon';
 
 export const metadata: Metadata = {
   title: 'About Us | The Road Rescue Guys',
   description:
-    'Learn about The Road Rescue Guys — a Birmingham-based UK vehicle recovery and roadside assistance operator focused on transparent pricing and dependable help.',
+    'Learn about The Road Rescue Guys — a UK vehicle recovery and roadside assistance operator serving Greater Manchester and Yorkshire, focused on transparent pricing and dependable help.',
 };
 
 export default function AboutUsPage() {
@@ -47,7 +48,7 @@ export default function AboutUsPage() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="material-symbols-outlined text-[22px]">chat</span>
+                  <WhatsAppIcon className="text-[22px]" />
                   <span>WhatsApp Us</span>
                 </a>
               </div>
@@ -85,10 +86,10 @@ export default function AboutUsPage() {
                   </div>
                   <div className="flex flex-col text-left">
                     <span className="font-label-tech text-[10px] uppercase text-inverse-on-surface/70 tracking-wider">
-                      Midlands Depot Base
+                      Regional Coverage
                     </span>
                     <span className="font-headline-sm text-body-sm font-bold text-white">
-                      25 Kingsway, Birmingham B4 7SL
+                      Greater Manchester &amp; Yorkshire
                     </span>
                   </div>
                 </div>
@@ -129,7 +130,7 @@ export default function AboutUsPage() {
               <div className="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant">
                 <p>
                   Breakdowns and vehicle problems can happen without warning, whether on a bustling motorway like the
-                  M6 or a quiet suburban street. At The Road Rescue Guys, our entire focus is making the recovery
+                  M60 or a quiet suburban street. At The Road Rescue Guys, our entire focus is making the recovery
                   process straightforward, transparent, and dependable.
                 </p>
                 <p>
@@ -206,7 +207,7 @@ export default function AboutUsPage() {
                 src: towingImage,
                 badge: 'Garage & Transit',
                 title: 'Towing',
-                text: 'Safe vehicle transportation when a car needs to be moved to a preferred garage, dealership, or home address across the Midlands or nationwide.',
+                text: 'Safe vehicle transportation when a car needs to be moved to a preferred garage, dealership, or home address across Greater Manchester, Yorkshire or nationwide.',
                 tag: 'Underlift Spec • Long-Distance Transit',
               },
             ].map((service) => (
@@ -331,7 +332,7 @@ export default function AboutUsPage() {
                 icon: 'acute',
                 bg: 'bg-primary text-on-primary',
                 title: '24/7 Availability',
-                text: 'Operating round the clock, every day of the year across Birmingham, the West Midlands corridor, and national UK motorways.',
+                text: 'Operating round the clock, every day of the year across Greater Manchester, Yorkshire, and national UK motorways.',
               },
               {
                 icon: 'minor_crash',
@@ -343,7 +344,7 @@ export default function AboutUsPage() {
                 icon: 'headset_mic',
                 bg: 'bg-primary text-on-primary',
                 title: 'Clear Communication',
-                text: 'Direct phone communication with our active Birmingham control desk and real-time status notifications until our vehicle arrives.',
+                text: 'Direct phone communication with our active control desk and real-time status notifications until our vehicle arrives.',
               },
               {
                 icon: 'electric_car',
@@ -391,7 +392,7 @@ export default function AboutUsPage() {
             Need Help on the Road?
           </h2>
           <p className="font-body-lg text-body-lg text-on-primary max-w-2xl">
-            Contact The Road Rescue Guys for vehicle recovery, roadside assistance or towing. Our local Birmingham
+            Contact The Road Rescue Guys for vehicle recovery, roadside assistance or towing. Our local
             dispatch desk is active right now.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 w-full sm:w-auto">
@@ -408,13 +409,13 @@ export default function AboutUsPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-[22px]">chat</span>
+              <WhatsAppIcon className="text-[22px]" />
               <span>WhatsApp Us</span>
             </a>
           </div>
           <div className="text-on-primary/80 font-label-tech text-label-tech flex items-center gap-2 pt-2">
             <span className="material-symbols-outlined text-[16px]">pin_drop</span>
-            <span>Central Hub: 25 Kingsway, Birmingham, B4 7SL • Nationwide Coverage</span>
+            <span>Serving Greater Manchester &amp; Yorkshire • Nationwide Coverage</span>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import FaqAccordion from '../../components/FaqAccordion';
+import WhatsAppIcon from '../../components/WhatsAppIcon';
 import heroImage from '../../assets/images/a_realistic_high_resolution_roadside_motorway_sce.webp';
 import vehicleRecoveryImage from '../../assets/images/a_wide_cinematic_high_resolution_roadside_motorw.webp';
 import roadsideAssistanceImage from '../../assets/images/a_realistic_high_resolution_sharp_daytime_outdoo.webp';
@@ -9,7 +10,7 @@ import towingImage from '../../assets/images/rainy_motorway_tow_truck_recovery.w
 export const metadata: Metadata = {
   title: 'Services | The Road Rescue Guys',
   description:
-    'Vehicle recovery, roadside assistance and towing services from The Road Rescue Guys — 24/7 dispatch across Birmingham and the UK motorway network.',
+    'Vehicle recovery, roadside assistance and towing services from The Road Rescue Guys — 24/7 dispatch across Greater Manchester, Yorkshire and the UK motorway network.',
 };
 
 const faqItems = [
@@ -41,7 +42,7 @@ const faqItems = [
   {
     question: 'Which areas do you cover?',
     answer:
-      'We provide immediate local dispatch throughout Birmingham, Solihull, Sutton Coldfield, Dudley, Walsall, and the entire West Midlands motorway network (M6, M5, M42, M40, A38), alongside long-distance nationwide vehicle repatriation across England & Wales.',
+      'We provide immediate local dispatch throughout Greater Manchester and Yorkshire, and their motorway network (M60, M62, M1, A1(M)), alongside long-distance nationwide vehicle repatriation across England & Wales.',
   },
 ];
 
@@ -62,7 +63,7 @@ export default function ServicesPage() {
               </h1>
               <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
                 Whether your vehicle has broken down, needs roadside help or must be transported, The Road Rescue
-                Guys are ready to assist across Birmingham and nationwide corridors.
+                Guys are ready to assist across Greater Manchester, Yorkshire and nationwide corridors.
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
                 <a
@@ -78,7 +79,7 @@ export default function ServicesPage() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="material-symbols-outlined text-tertiary text-[20px]">chat</span>
+                  <WhatsAppIcon className="text-tertiary text-[20px]" />
                   WhatsApp Us
                 </a>
               </div>
@@ -117,7 +118,7 @@ export default function ServicesPage() {
                         Central Operating Hub
                       </span>
                       <span className="font-label-md text-label-md text-inverse-on-surface font-semibold truncate">
-                        Dispatched from Birmingham B4 7SL
+                        Dispatched from Greater Manchester
                       </span>
                     </div>
                   </div>
@@ -304,7 +305,7 @@ export default function ServicesPage() {
                   'Dealership & garage transfer transit',
                   'Low-clearance access (multi-storey car parks)',
                   'Safe soft-wheel harness tie downs',
-                  'Local Birmingham & nationwide transport',
+                  'Local Greater Manchester, Yorkshire & nationwide transport',
                 ].map((point) => (
                   <div key={point} className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">
@@ -347,7 +348,7 @@ export default function ServicesPage() {
                 num: '01',
                 icon: 'call',
                 title: 'Call or WhatsApp',
-                text: 'Speak directly with our Birmingham controllers. No automated robots or endless call menus.',
+                text: 'Speak directly with our controllers. No automated robots or endless call menus.',
                 footIcon: null,
                 footText: 'Instant Pickup',
                 footColor: 'text-tertiary font-bold',
@@ -435,7 +436,7 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-[20px]">chat</span>
+              <WhatsAppIcon className="text-[20px]" />
               WhatsApp Us with Your Location
             </a>
           </div>
@@ -468,7 +469,7 @@ export default function ServicesPage() {
             Need Vehicle Recovery or Roadside Help?
           </h2>
           <p className="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Available 24 hours a day, 7 days a week. Direct connection to our Birmingham control room.
+            Available 24 hours a day, 7 days a week. Direct connection to our control room.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto">
             <a
@@ -484,7 +485,7 @@ export default function ServicesPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <span className="material-symbols-outlined text-tertiary-fixed text-[20px]">chat</span>
+              <WhatsAppIcon className="text-tertiary-fixed text-[20px]" />
               WhatsApp Us
             </a>
           </div>

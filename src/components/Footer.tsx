@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import WhatsAppIcon from './WhatsAppIcon';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
@@ -36,7 +37,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="font-body-sm text-body-sm text-inverse-on-surface/80">
-              Rapid-response vehicle recovery and roadside breakdown assistance across Birmingham and UK motorways.
+              Rapid-response vehicle recovery and roadside breakdown assistance across Greater Manchester, Yorkshire and UK motorways.
               ISO accredited operators on 24-hour priority standby.
             </p>
             <div className="flex items-center gap-2 text-label-tech font-label-tech bg-inverse-surface/80 p-2 rounded border border-outline/30">
@@ -85,7 +86,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-tertiary-fixed text-[18px] mt-0.5">chat</span>
+                <WhatsAppIcon className="text-tertiary-fixed text-[18px] mt-0.5" />
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-inverse-on-surface/60">
                     WhatsApp Support
@@ -113,9 +114,9 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-outline-variant text-[18px] mt-0.5">pin_drop</span>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-inverse-on-surface/60">
-                    Depot Address
+                    Coverage Area
                   </span>
-                  <span className="text-white">25 Kingsway, Birmingham, B4 7SL</span>
+                  <span className="text-white">Greater Manchester &amp; Yorkshire</span>
                 </div>
               </li>
             </ul>

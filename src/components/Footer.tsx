@@ -79,8 +79,8 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-primary text-[18px] mt-0.5">phone_in_talk</span>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-inverse-on-surface/60">24/7 Phone</span>
-                  <a className="text-white font-bold hover:text-primary-fixed" href="tel:07700900123">
-                    07700 900123
+                  <a className="text-white font-bold hover:text-primary-fixed" href="tel:07881241835">
+                    07881 241835
                   </a>
                 </div>
               </li>
@@ -92,11 +92,11 @@ export default function Footer() {
                   </span>
                   <a
                     className="text-white hover:text-tertiary-fixed"
-                    href="https://wa.me/447700900123"
+                    href="https://wa.me/447881241835"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    07700 900123
+                    07881 241835
                   </a>
                 </div>
               </li>
@@ -104,8 +104,8 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-outline-variant text-[18px] mt-0.5">mail</span>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-inverse-on-surface/60">Email</span>
-                  <a className="text-white hover:underline" href="mailto:help@theroadrescueguys.co.uk">
-                    help@theroadrescueguys.co.uk
+                  <a className="text-white hover:underline" href="mailto:theroadrescueguys@gmail.com">
+                    theroadrescueguys@gmail.com
                   </a>
                 </div>
               </li>

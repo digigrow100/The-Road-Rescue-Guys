@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import heroImage from '../../assets/images/wide_angle_roadside_motorway_scene_at_dusk_overcas.webp';
+import whoWeAreImage from '../../assets/images/roadside_diagnostics_on_a_rainy_street.webp';
+import vehicleRecoveryImage from '../../assets/images/rainy_motorway_breakdown_recovery.webp';
+import roadsideAssistanceImage from '../../assets/images/a_realistic_documentary_style_roadside_assistance.webp';
+import towingImage from '../../assets/images/yellow_recovery_truck_at_a_roundabout.webp';
 
 export const metadata: Metadata = {
   title: 'About Us | The Road Rescue Guys',
@@ -31,14 +36,14 @@ export default function AboutUsPage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                 <a
                   className="inline-flex items-center justify-center gap-3 px-space-lg py-4 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-md transition-all"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
                   <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-                  <span>Call Now (07700 900123)</span>
+                  <span>Call Now (07881 241835)</span>
                 </a>
                 <a
                   className="inline-flex items-center justify-center gap-3 px-space-lg py-4 bg-tertiary-container hover:bg-tertiary text-on-tertiary font-label-lg text-label-lg rounded shadow-sm transition-all"
-                  href="https://wa.me/447700900123"
+                  href="https://wa.me/447881241835"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -71,7 +76,7 @@ export default function AboutUsPage() {
                   priority
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1UXHtcx5jBE6DaA8stUEWsK9LSPdpHuhZ5xwxPPgfVJZ9nIC-DglQDBe1zT3jO3Aqkn2McPAIcE_rCaRquhSUlrL_DX3vlTzlBzQZ7xxx_wxTkWrVHQ6I-SUxrmz4mNhPjJyJdH4Rg0I6LnAtlifDzymF8omxda8h-y9Y5UtnPIWiXwwY6W9yzSbrkozuMWYXTRWm4KRSs6Foe9SYt0bmHsOEWcuBke0L5HkUxxvruRm4OdvOU5Yz0DAA"
+                  src={heroImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-inverse-surface/95 backdrop-blur-md text-inverse-on-surface p-3 sm:px-4 sm:py-3 rounded shadow-lg flex items-center gap-3">
@@ -105,7 +110,7 @@ export default function AboutUsPage() {
                     fill
                     sizes="(min-width: 1024px) 50vw, 100vw"
                     className="object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3kt2L8uW4Dkxi4Ct_mfnrGSSKvg_gQnYLMEdt1fS5hDnvteO4QsXhnQzIc1AvUSRGjsCYTKweh7kCCnvdjmYtGBddFfuZ5Q8mD6AjFgUMJbgD0DdDLV73FkY6KOTIZwF0z6eAPjOCq83ds4aYpwG3IrGUauVcieZlZokfZWCgXwD58n1zpVLusN8C747fc3B7zEIbVt-Aqt8m9BDllQLl-gCeP9GkgKTK1nUbBqttwqO3mts9dYo"
+                    src={whoWeAreImage}
                   />
                 </div>
                 <div className="absolute top-4 left-4 bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded font-label-tech text-label-tech flex items-center gap-2 shadow">
@@ -182,7 +187,7 @@ export default function AboutUsPage() {
             {[
               {
                 alt: 'A commercial yellow and red tilt-slide recovery truck loading a silver hatchback on a UK motorway emergency breakdown lane, clear motorway overhead directional gantries in background, sharp documentary style automotive photo.',
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCC435sQBqFKv4BV3R-gitVWt9-zAVAgk6kVnv4fLI9Fvb1r8TG4gM-AF88rchRo5joSdc-I-RbmCIbAKy3sFKhpX4mggnj_Y3wdfXEk-mdV3IzqDSEQF83fDfQtfH9JScFh7CKA5eedkpYX5yxpysQjD6Umt85mKqxAvezlWVpjAbyIqT4gCTa1-LeuY8guM97NigERZ8Qq6-WXYtGy-5b4g62LM2ngkHWxEB2TZRLm_Jykp_cF-oD',
+                src: vehicleRecoveryImage,
                 badge: 'Emergency Recovery',
                 title: 'Vehicle Recovery',
                 text: 'Professional recovery when a vehicle cannot safely continue its journey. Complete non-runner handling, delicate accident extraction, and EV-safe transport.',
@@ -190,7 +195,7 @@ export default function AboutUsPage() {
               },
               {
                 alt: 'An automotive technician using an orange heavy duty portable jump starter booster pack and diagnostic tablet under the open bonnet of a modern car on an English suburban street, daytime, ultra crisp clarity.',
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCp4YQ-ZKw_nebhzr93fDUiChDNb0iTmOjelYk7syVbqhCBGaersVU-h9jKOXtNEBbwwyIjtRqU-T-Jezs45FrNgQNhRDR4xB2zoCoq-fVbGA_ml1ib7T2PQKp8VIWJd0c50NQH3Cweeh-k8mU4PhefQKyWE2WZ7arXb6k9rSuVzxuk7wW-38MlebBy4vzoqqLLb4zFZiaHrFc7XXCVEAtgcdavyxh4RmQ2rQNHzgK1K_A2CsrmxLVl',
+                src: roadsideAssistanceImage,
                 badge: 'On-Scene Repair',
                 title: 'Roadside Assistance',
                 text: 'Practical roadside support when drivers experience unexpected vehicle problems: 12V/24V battery jump starts, safe wheel changes, misfuelling drainage, and key lockout support.',
@@ -198,7 +203,7 @@ export default function AboutUsPage() {
               },
               {
                 alt: 'A heavy duty yellow recovery truck safely towing a sedan through an urban UK junction with roundabouts and road signage under clear skies, professional logistics transportation.',
-                src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVuTG-9S9aVnB8sDeUikesm0CbAAcngfIrMPb87owIaAgJ2nH04no1q_Vz4xsq_mnVrWbu6Yk40APWbjEEqUyxMBw17pebqjBCA0l71fQI0ddBnNzKeM9REQl1QxcNxoPxHYJBqygmx5t39n5ta9Pgf-wddRrRqwo0xutfDr3OLaZC5_7mCtcKTsynRB3lfpq30m_zjyolpR6_bBEgWdnWxiYzvoWUcnL06driSmN94bQWQfcj8yhE',
+                src: towingImage,
                 badge: 'Garage & Transit',
                 title: 'Towing',
                 text: 'Safe vehicle transportation when a car needs to be moved to a preferred garage, dealership, or home address across the Midlands or nationwide.',
@@ -392,14 +397,14 @@ export default function AboutUsPage() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 w-full sm:w-auto">
             <a
               className="inline-flex items-center justify-center gap-3 px-space-xl py-4 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg rounded shadow-lg transition-all font-bold"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-              <span>Call 07700 900123</span>
+              <span>Call 07881 241835</span>
             </a>
             <a
               className="inline-flex items-center justify-center gap-3 px-space-xl py-4 bg-inverse-surface hover:bg-on-surface text-inverse-on-surface font-label-lg text-label-lg rounded shadow transition-all font-bold"
-              href="https://wa.me/447700900123"
+              href="https://wa.me/447881241835"
               rel="noopener noreferrer"
               target="_blank"
             >

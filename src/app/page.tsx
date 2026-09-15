@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FaqAccordion from '../components/FaqAccordion';
+import heroImage from '../assets/images/a_realistic_urban_street_scene_in_daylight_wide_a.webp';
+import vehicleRecoveryCardImage from '../assets/images/amber_recovery_truck_on_a_wet_motorway.webp';
+import roadsideAssistanceCardImage from '../assets/images/roadside_battery_assistance_in_a_suburban_street.webp';
+import towingCardImage from '../assets/images/rainy_uk_roundabout_recovery_tow_truck.webp';
+import aboutSectionImage from '../assets/images/roadside_assistance_in_the_rain.webp';
+import finalCtaImage from '../assets/images/rainy_motorway_recovery_scene.webp';
 
 const faqItems = [
   {
@@ -59,14 +65,14 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto pt-space-xs">
                 <a
                   className="h-14 px-8 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-all"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
                   <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
                   <span>Call Now</span>
                 </a>
                 <a
                   className="h-14 px-8 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors"
-                  href="https://wa.me/447700900123"
+                  href="https://wa.me/447881241835"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -98,7 +104,7 @@ export default function HomePage() {
                   priority
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxNlzFMpWz2XnicH7G0EfRpE4zD4O9bP8LdLdxZKqOztX8DxtY92_zAN5KbMuqBxcLrca0Q2I0ZLhTPonJ8bWKvp5ERBAGiRqLFhovsusBMZSRfhJaIYV1pZPmjlu26JfBJAt9lZJSPZ3d82LmqWD726t49JJyZ5tcWn3EgFAK6dx7Px3vvwmgi1Ir9420pAZl-3spXR2VPG1Si7bvqeGp_Q71RPJnc3do4jijjlUeXxQyvk-sW9O"
+                  src={heroImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-inverse-surface/90 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 text-inverse-on-surface font-label-tech text-label-tech">
@@ -120,9 +126,9 @@ export default function HomePage() {
                 </div>
                 <a
                   className="px-4 py-2.5 bg-primary text-on-primary font-headline-sm text-[16px] rounded-lg hover:bg-secondary transition-colors whitespace-nowrap"
-                  href="tel:07700900123"
+                  href="tel:07881241835"
                 >
-                  07700 900123
+                  07881 241835
                 </a>
               </div>
             </div>
@@ -136,7 +142,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
                 <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
@@ -146,13 +152,13 @@ export default function HomePage() {
                   Direct Emergency Call
                 </span>
                 <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07700 900123
+                  07881 241835
                 </span>
               </div>
             </a>
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="https://wa.me/447700900123"
+              href="https://wa.me/447881241835"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -164,13 +170,13 @@ export default function HomePage() {
                   WhatsApp Live Pin
                 </span>
                 <span className="font-headline-sm text-[16px] text-on-surface block font-bold truncate">
-                  07700 900123
+                  07881 241835
                 </span>
               </div>
             </a>
             <a
               className="p-space-md bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-space-sm group"
-              href="mailto:help@theroadrescueguys.co.uk"
+              href="mailto:theroadrescueguys@gmail.com"
             >
               <div className="w-10 h-10 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center group-hover:bg-inverse-surface group-hover:text-inverse-on-surface transition-colors">
                 <span className="material-symbols-outlined text-[20px]">mail</span>
@@ -180,7 +186,7 @@ export default function HomePage() {
                   Email Inquiries
                 </span>
                 <span className="font-body-md text-[14px] text-on-surface block font-semibold truncate">
-                  help@theroadrescueguys.co.uk
+                  theroadrescueguys@gmail.com
                 </span>
               </div>
             </a>
@@ -222,7 +228,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuxNlzFMpWz2XnicH7G0EfRpE4zD4O9bP8LdLdxZKqOztX8DxtY92_zAN5KbMuqBxcLrca0Q2I0ZLhTPonJ8bWKvp5ERBAGiRqLFhovsusBMZSRfhJaIYV1pZPmjlu26JfBJAt9lZJSPZ3d82LmqWD726t49JJyZ5tcWn3EgFAK6dx7Px3vvwmgi1Ir9420pAZl-3spXR2VPG1Si7bvqeGp_Q71RPJnc3do4jijjlUeXxQyvk-sW9O"
+                  src={vehicleRecoveryCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-primary text-on-primary font-label-tech text-[11px] px-2.5 py-1 rounded">
                   PRIORITY RECOVERY
@@ -255,7 +261,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBP7yBFw7i3eGxcgkvvZw9aYExzspeTFn-5CBjPFcG70Wx9oYHH9JUAKijRBLuEK0TfZLtNx4bm8KJwX204s258KrPiy-bQzyNJ6ZBCdjWTzlPYJjC6p7Xq3Q-nKcmJci4PK_8XnCCWt6DPZ-Oo_MAv6VW5jOoQQWY6iBzzmmnnuuYQtt02bhN0FX7pO08vmVmEmTlTjIy6nsZK3DI228lk5BYlH-3ozoZJMkRcIZszaqicabgnGVe"
+                  src={roadsideAssistanceCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-tertiary text-on-tertiary font-label-tech text-[11px] px-2.5 py-1 rounded">
                   RAPID RESOLUTION
@@ -288,7 +294,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrrUWhPUbTqaaUkaG7xNVkSOw0BUkB24DkCuTJ3XtyHv0JNEUVjbRT3bcoIiRkkxZK75OofTJM09KtFpt1wRLyvxnz1YRwezOR3Q-AL8OQi9S2wtwpjTpFafiXXwLmbQ-eW9D1KMqlJt7nTtWJTw3SwMj0U_e3UBCLzkR6XR0EQEIxEa5XblYarlo9Rf_u_U2d-GydmwbccsyvTul1kbFVNP-2pfcigO8rw0sTr1kX21sGeXbzrUdb"
+                  src={towingCardImage}
                 />
                 <span className="absolute top-3 right-3 bg-inverse-surface text-inverse-on-surface font-label-tech text-[11px] px-2.5 py-1 rounded">
                   LONG DISTANCE
@@ -335,14 +341,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-space-sm flex-shrink-0 w-full sm:w-auto">
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-colors"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
-                <span>Call 07700 900123</span>
+                <span>Call 07881 241835</span>
               </a>
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-secondary hover:bg-on-secondary-container text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -435,7 +441,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-headline-sm text-headline-sm text-on-surface">Call or WhatsApp</h3>
               <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Reach our control desk on <strong>07700 900123</strong> or drop your live GPS pin on WhatsApp. State
+                Reach our control desk on <strong>07881 241835</strong> or drop your live GPS pin on WhatsApp. State
                 your vehicle model and the immediate symptom.
               </p>
             </div>
@@ -484,7 +490,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1VYYvTQmWi5etN6D_h0SgjIzoIXznExg2O7x52g-jKTu6xGGtXiMGzGbUbR8n9hSqBiup6V3lj9e0pHeAHNWuKXR1IGkXfuZ01O3R3QTLSzWYjeEhkii7J1JuEVVlh6OKH1JOYNph_Mw4sbcCwsylbeYbzwUjhj02xUXE-DNTzCmLd95G7kIr6dU8Atf1T_bRWcimz79CS6IO7ZVgzySmhAhi-sTzMmTPSwwxgBIem-5Qt6P7FSGQ9F7w"
+                  src={aboutSectionImage}
                 />
               </div>
               <div className="mt-4 p-space-md bg-surface-container-low rounded-lg flex items-center gap-space-sm">
@@ -587,7 +593,7 @@ export default function HomePage() {
           <div className="flex justify-center pt-space-xs">
             <a
               className="px-8 py-3.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm flex items-center gap-space-xs transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined text-[20px]">map</span>
               <span>View All Areas We Cover</span>
@@ -691,7 +697,7 @@ export default function HomePage() {
             fill
             sizes="100vw"
             className="object-cover object-center opacity-25 filter grayscale contrast-125"
-            src="https://lh3.googleusercontent.com/aida/AEtjO1VPwNlikpgf3cD408_aI8LMu9Fq2QNEhDAsPACta4poykXNohz330p0CiXa8hEU06Knh3qIYkjZ-e2_uS_x6nHSETKA4nukQnaF6JTUFzb5736UMCbqij50gmKNRWEqPP76-_qJv6ujeshwZOv9KlJNGUtzXWiI5utcZXeqJb59f5cXR0rhPfFhQVuPK8yQXKPeuY5HkFQe3oP6Zm8R5c6Rd_-f2EOqdH_CX3YKw2c5tcDE-EfdXe_1Sg"
+            src={finalCtaImage}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-inverse-surface via-inverse-surface/90 to-inverse-surface/70"></div>
         </div>
@@ -710,14 +716,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center gap-space-sm w-full sm:w-auto pt-space-xs">
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs shadow-lg transition-colors"
-                href="tel:07700900123"
+                href="tel:07881241835"
               >
                 <span className="material-symbols-outlined text-[22px]">phone_in_talk</span>
-                <span>Direct Call: 07700 900123</span>
+                <span>Direct Call: 07881 241835</span>
               </a>
               <a
                 className="w-full sm:w-auto h-14 px-8 bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg rounded-lg flex items-center justify-center gap-space-xs transition-colors shadow-md"
-                href="https://wa.me/447700900123"
+                href="https://wa.me/447881241835"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -733,7 +739,7 @@ export default function HomePage() {
               <span>•</span>
               <span className="flex items-center gap-1">
                 <span className="material-symbols-outlined text-[16px] text-primary-fixed">mail</span>
-                help@theroadrescueguys.co.uk
+                theroadrescueguys@gmail.com
               </span>
             </div>
           </div>

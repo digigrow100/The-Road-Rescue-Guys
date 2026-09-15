@@ -1,8 +1,10 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import logo from '../assets/images/logo-full.webp';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -47,27 +49,17 @@ export default function Header() {
             <span className="text-inverse-on-surface/80">Immediate Support:</span>
             <a
               className="font-bold text-on-tertiary-container hover:text-tertiary-fixed transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
-              07700 900123
+              07881 241835
             </a>
           </div>
         </div>
       </div>
       <div className="bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_2px_12px_rgba(23,28,34,0.08)] border-b border-surface-container-high">
         <div className="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-4">
-          <Link className="flex items-center gap-3 group" href="/">
-            <div className="w-11 h-11 bg-primary rounded flex items-center justify-center text-on-primary shadow-sm group-hover:bg-primary-container transition-colors">
-              <span className="material-symbols-outlined text-[24px]">emergency</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface leading-none font-bold">
-                THE ROAD RESCUE GUYS
-              </span>
-              <span className="font-label-tech text-label-tech text-primary tracking-wider uppercase font-semibold">
-                UK BREAKDOWN &amp; RECOVERY
-              </span>
-            </div>
+          <Link className="flex items-center group" href="/">
+            <Image src={logo} alt="The Road Rescue Guys — UK Breakdown & Recovery" className="h-10 w-auto sm:h-12" priority />
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
@@ -88,7 +80,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <a
               className="hidden sm:flex items-center gap-2 text-on-surface hover:text-primary transition-colors"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <div className="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
                 <span className="material-symbols-outlined text-[18px]">call</span>
@@ -97,12 +89,12 @@ export default function Header() {
                 <span className="font-label-tech text-label-tech text-on-surface-variant uppercase leading-none">
                   24hr Dispatch
                 </span>
-                <span className="font-headline-sm text-label-lg font-bold">07700 900123</span>
+                <span className="font-headline-sm text-label-lg font-bold">07881 241835</span>
               </div>
             </a>
             <a
               className="hidden md:inline-flex items-center justify-center px-space-lg py-3 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:shadow transition-all"
-              href="tel:07700900123"
+              href="tel:07881241835"
             >
               <span className="material-symbols-outlined mr-2 text-[18px]">e911_emergency</span>Call Now
             </a>

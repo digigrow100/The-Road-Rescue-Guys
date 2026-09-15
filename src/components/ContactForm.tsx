@@ -35,7 +35,7 @@ export default function ContactForm() {
             className="w-full px-4 py-3 bg-surface-container-low text-on-surface rounded font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner"
             id="phoneNumber"
             name="phoneNumber"
-            placeholder="07700 900123"
+            placeholder="07881 241835"
             required
             type="tel"
           />
@@ -133,8 +133,8 @@ export default function ContactForm() {
         <span className="material-symbols-outlined text-error text-[22px] flex-shrink-0 mt-0.5">warning</span>
         <p className="font-body-sm text-body-sm text-on-error-container font-semibold">
           In an active roadside emergency, please call{' '}
-          <a className="underline font-bold" href="tel:07700900123">
-            07700 900123
+          <a className="underline font-bold" href="tel:07881241835">
+            07881 241835
           </a>{' '}
           immediately instead of submitting a form.
         </p>

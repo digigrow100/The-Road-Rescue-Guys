@@ -35,11 +35,15 @@ with `'use client'` (see `Header.tsx`, `FaqAccordion.tsx`, `ContactForm.tsx`).
 Pages themselves stay server components unless they need client-only
 behavior.
 
-Note: the phone number (07700 900123), WhatsApp link (wa.me/447700900123),
-email, and depot address (25 Kingsway, Birmingham, B4 7SL) are repeated
-across Header, Footer, MobileCallBar, and every page's CTAs. If the user
-asks to change contact details, update all occurrences — grep for the old
-value across `src/` to find every instance.
+Note: the phone number (07881 241835), WhatsApp link (wa.me/447881241835),
+email (theroadrescueguys@gmail.com), and depot address (25 Kingsway,
+Birmingham, B4 7SL) are repeated across Header, Footer, MobileCallBar, and
+every page's CTAs. If the user asks to change contact details, update all
+occurrences — grep for the old value across `src/` to find every instance.
+The OG image (`public/og-image.png`) also has the phone number baked into
+its pixels — its editable source is `src/assets/og-image-source.svg`;
+edit that and re-render to PNG (1200x630) rather than editing the PNG
+directly if this changes again.
 
 The photos across all four pages are currently hotlinked `https://lh3.googleusercontent.com/...`
 placeholder URLs carried over from the original design mockups, not local

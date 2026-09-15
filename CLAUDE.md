@@ -40,17 +40,25 @@ email (theroadrescueguys@gmail.com), and depot address (25 Kingsway,
 Birmingham, B4 7SL) are repeated across Header, Footer, MobileCallBar, and
 every page's CTAs. If the user asks to change contact details, update all
 occurrences — grep for the old value across `src/` to find every instance.
-The OG image (`public/og-image.png`) also has the phone number baked into
-its pixels — its editable source is `src/assets/og-image-source.svg`;
-edit that and re-render to PNG (1200x630) rather than editing the PNG
-directly if this changes again.
+The OG image (`public/og-image.png`) is rendered from
+`src/assets/the-road-rescue-guys-open-graph.webp` (resized/cropped to
+1200x630) and also has the phone number baked into its pixels as a finished
+graphic — if contact details change again, get an updated source graphic
+from the user rather than trying to edit the PNG directly.
 
-The photos across all four pages are currently hotlinked `https://lh3.googleusercontent.com/...`
-placeholder URLs carried over from the original design mockups, not local
-files. When the user supplies real photos, save them into `src/assets/images/`
-per the image rule below and swap the matching `<Image src="https://...">` for
-a locally-imported `<Image />` — do this one image at a time as real assets
-arrive, don't block on having all of them.
+Brand assets — the site logo (`src/assets/the-road-rescue-guys-logo.webp`,
+used in `Header.tsx`), the site icon (`src/assets/the-road-rescue-guys-site-icon.webp`,
+rendered down to the favicon/apple-touch-icon/PWA-icon PNGs in `public/`),
+and the OG image source above — are finished graphics supplied by the user,
+not editable SVGs. To change any of them, get a new file from the user and
+swap it in (regenerating the favicon PNGs and `og-image.png` via `sharp` at
+their existing sizes), rather than trying to edit the pixels yourself.
+
+All photos across the four pages are local files imported from
+`src/assets/images/` — see the image rule below. If the user supplies
+replacement photos, save them into `src/assets/images/` and swap the
+matching `<Image src={...}>` import — do this one image at a time as new
+assets arrive, don't block on having all of them.
 
 ## Image rule — always optimized
 
